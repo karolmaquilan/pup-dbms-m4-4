@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script type="text/javascript" src='/static/jquery-1.11.3.js'></script>
+</head>
+
+<body>
+<div class='main'>
+    <div class = 'container'>
+        <div class='form-section'>
+            <h1 class = 'form-title'> New Thesis Entry</h1>
+            <form class='create-form'>
+                <select name = 'thesis_year'   >
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                </select>
+
+                <input type='text' name='thesis_title' placeholder='Title'required/>
+                <textarea type='text' name='thesis_abstract' placeholder='Abstract'required></textarea>
+                <input type='text' name='thesis_adviser' placeholder='Adviser'required/>
+                <select name = 'thesis_section'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <input type='submit' value='Submit Entry'></input>
+
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class='thesis-list-section'>
+        <ul class = 'thesis-list'>
+
+        </ul>
+        <!-- your list here -->
+    </div>
+
+<a href="{{ url|safe }}">{{ url_linktext }}</a>
+</div>
+
+
+<script type="text/javascript" src='/static/script.js'></script>
+</body>
+</html>
